@@ -13,7 +13,7 @@ class TodoItem extends Component {
                 <div className="text">{text}</div>
                 <div className="remove" onClick={e => {
                     e.stopPropagation();//이벤트 버블링을 없앤다.
-                    onRemove(id);
+                    onRemove(id);//이렇게 변수를 전달해줄 경우, onClick={onRemove(id)}이렇게 하면 함수가 렌더링될때마다 즉시 실행되어 버린다.
                 }}>[지우기]</div>
             </div>
         )

@@ -1,0 +1,21 @@
+.wrapper{
+    background:#000;
+    padding:1rem;
+    color:#fff;
+    font-size: 2rem;
+    &.inverted{
+        //inverted가 wrapper와 동시에 적용되었을떄
+        color:#000;
+        background: #fff;
+        border: 1px solid #000;
+    }
+}
+
+// 글로벌 CSS
+:global {
+    .something{
+        font-weight: 800;
+        color:aqua;
+    }
+    //다른클래스는 여기에 넣으면 된다.
+}

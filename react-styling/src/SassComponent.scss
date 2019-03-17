@@ -1,0 +1,45 @@
+@import './styles/utils.scss';
+//이렇게 따로 분리한 scss 파일을 호출 가능
+
+.SassComponent{
+    display: flex;
+    //.SassComponent안의 .box클래스
+    .box{
+        background:red;
+        cursor: pointer;
+        transition:all .3s ease-in;
+        &.red{
+            //.box가 .red와 같이 사용되었을떄
+            background:$red;
+            //mixin사용
+            @include square(1);
+        }
+        &.orange{
+            background:$orange;
+            @include square(2);
+        }
+        &.yellow{
+            background:$yellow;
+            @include square(3);
+        }
+        &.green{
+            background:$green;
+            @include square(4);
+        }
+        &.blue{
+            background:$blue;
+            @include square(5);
+        }
+        &.indigo{
+            background:$indigo;
+            @include square(6);
+        }
+        &.violet{
+            background:$violet;
+            @include square(7);
+        }
+        &:hover{
+            background: black;
+        }
+    }
+}
