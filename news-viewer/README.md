@@ -22,4 +22,3 @@ noreferrer는 브라우저가 다른 페이지로 이동할 떄 헤더를 통해
 
 
 
-https://via.placeholder.com/160
